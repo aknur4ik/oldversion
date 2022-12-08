@@ -1,0 +1,89 @@
+// This is a comment
+@import "./varyables";
+@import "./header";
+@import "./footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+}
+
+.menu-bar {
+  width: 960px;
+  margin: 0 auto;
+  background-color: $primaryColor;
+  height: 50px;
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  a {
+    display: block;
+    padding: 0 30px;
+    color:$thirdColor;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 50px;
+    &:hover {
+      background:$bacground;
+    }
+  }
+
+  // &::before{
+  //     content: '';
+  //     display: block;
+  //     // height: 50px;
+  //     width: 70%;
+  //     margin: 25px 200px;
+  //     background-color: red;
+  //     position: absolute;
+  //     left: 0;
+  //     z-index: -1;
+}
+
+.photo {
+  width: 400px;
+  border-radius: 20px;
+}
+.image {
+  width: 600px;
+  border-radius: 20px;
+  &:hover{
+    transform: scale(1.5);
+    transition: 1s;
+  }
+}
+.child_1 {
+  order: 1;
+  text-align: center;
+  /* flex-basis: 20%; */
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+.child_2 {
+  display: flex;
+  order: 2;
+  /* flex-basis: 10%; */
+
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.text {
+  margin-left: 20px;
+}

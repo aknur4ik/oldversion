@@ -1,0 +1,23 @@
+@import "./varyables";
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: $thirdColor;
+  margin-top: 80px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+   
+    padding: 0 30px;
+    color: $secondaryColor;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      background: $primaryColor;
+    }
+  }
+}
